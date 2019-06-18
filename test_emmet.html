@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!-- emmet官方api列表 -->
+<!-- https://docs.emmet.io/cheat-sheet/ -->
+
+<!--
+html:5 或者 ! 生成 HTML5 结构
+html:xt 生成 HTML4 过渡型
+html:4s 生成 HTML4 严格型
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .test {
+            /*m10-20 tab*/
+            margin: 10px 20px;
+            /* w100 */
+            width: 100px;
+            /* w2e */
+            width: 2em;
+            /* w100p */
+            width: 100%;
+            /* p10-20 */
+            padding: 10px 20px;
+            /* p10-20-30-40 */
+            padding: 10px 20px 30px 40px;
+            /* w100+h200 */
+            width: 100px;
+            height: 200px;
+            /* bd5px#6s */
+            border: 5px #666 solid;
+            /* c#fe */
+            color: #fefefe;
+
+            /* @f */
+            @font-face {
+                font-family: ;
+                src: url();
+            }
+
+            /* @f+ */
+            @font-face {
+                font-family: 'FontName';
+                src: url('FileName.eot');
+                src: url('FileName.eot?#iefix') format('embedded-opentype'),
+                    url('FileName.woff') format('woff'),
+                    url('FileName.ttf') format('truetype'),
+                    url('FileName.svg#FontName') format('svg');
+                font-style: normal;
+                font-weight: normal;
+            }
+
+            /* 模糊匹配 */
+            /* ov:h */
+            overflow: hidden;
+            /* po:f */
+            position: fixed;
+            /* d:n */
+            display: none;
+            /* 供应商前缀 */
+            /* -foo-css */
+            -webkit-foo-css:;
+            -moz-foo-css:;
+            -ms-foo-css:;
+            -o-foo-css:;
+            foo-css:;
+            /* -wm-trf */
+            -webkit-transform:;
+            -moz-transform:;
+            transform:;
+            /* 渐变 */
+            /* lg(left, #ccc, 50%, #000) */
+            background-image: -webkit-linear-gradient(left, #ccc, 50%, #000);
+            background-image: -o-linear-gradient(left, #ccc, 50%, #000);
+            background-image: linear-gradient(to right, #ccc, 50%, #000);
+
+        }
+    </style>
+    <!-- h2#title1 tab -->
+    <h2 id="title1"></h2>
+    <!-- h2.title -->
+    <h2 class="title"></h2>
+    <!-- h2[style=""] -->
+    <h2 style=""></h2>
+    <!-- h2{这是一个标题} -->
+    <h2>这是一个标题</h2>
+    <!-- ul>li*5 -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <!-- h2+h3 -->
+    <h2></h2>
+    <h3></h3>
+    <!-- h2^h3 -->
+    <h2></h2>
+    <h3></h3>
+    <!-- ul.tabbar>li{导航子内容}*5 -->
+    <ul class="tabbar">
+        <li>导航子内容</li>
+        <li>导航子内容</li>
+        <li>导航子内容</li>
+        <li>导航子内容</li>
+        <li>导航子内容</li>
+    </ul>
+    <!-- table#table1>tr.tr$*5 -->
+    <table id="table1">
+        <tr class="tr1"></tr>
+        <tr class="tr2"></tr>
+        <tr class="tr3"></tr>
+        <tr class="tr4"></tr>
+        <tr class="tr5"></tr>
+    </table>
+    <!-- (div>ul>li*5+a)+div>h2.title$*2 -->
+    <div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <a href=""></a>
+        </ul>
+    </div>
+    <div>
+        <h2 class="title1"></h2>
+        <h2 class="title2"></h2>
+    </div>
+    <!-- #page>div.logo+ul#navigation>li*5>a{Item $} -->
+    <div id="page">
+        <div class="logo"></div>
+        <ul id="navigation">
+            <li><a href="">Item 1</a></li>
+            <li><a href="">Item 2</a></li>
+            <li><a href="">Item 3</a></li>
+            <li><a href="">Item 4</a></li>
+            <li><a href="">Item 5</a></li>
+        </ul>
+    </div>
+    <!-- 隐式标签 -->
+    <!-- li：用于 ul 和 ol 中
+         tr：用于 table、tbody、thead 和 tfoot 中
+         td：用于 tr 中
+         option：用于 select 和 optgroup 中
+    -->
+    <!-- ul>.item$*5>a[href="image/$.jpg"]{链接$} -->
+    <div id="page">
+        <div class="logo"></div>
+        <ul id="navigation">
+            <li><a href="">Item 1</a></li>
+            <li><a href="">Item 2</a></li>
+            <li><a href="">Item 3</a></li>
+            <li><a href="">Item 4</a></li>
+            <li><a href="">Item 5</a></li>
+        </ul>
+    </div>
+
+    <!-- 生成Lorem ipsum实验性文本 -->
+    <!-- lorem5 -->
+    Lorem ipsum dolor sit amet.
+
+</body>
+
+</html>
